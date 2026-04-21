@@ -1,0 +1,505 @@
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the line height in all browsers.
+3. Prevent adjustments of font size after orientation changes in iOS.
+4. Use a more readable tab size (opinionated).
+*/
+
+html {
+	font-family:
+        Roboto,
+		system-ui,
+		'Segoe UI',
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji'; /* 1 */
+	line-height: 1.15; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 3 */
+	tab-size: 4; /* 4 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+	margin: 0;
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+	display: list-item;
+}
+
+body
+{
+    width:100vw;
+    height:100vh;
+}
+.admin-panel-container
+{
+    display:grid;
+    width:100%;
+    height:100%;
+    grid-template-columns : 1.8fr 8fr ;
+    grid-template-rows:1fr 9fr;
+}
+
+.profile-info-container
+{
+	grid-area:1 / 2 / 2 / 3;
+}
+.sidebar-container
+{
+	grid-area:1 / 1 / 3 /2;
+	background-color:#1992d4
+}
+.content-container
+{
+	grid-area: 2 / 2 / 3 / 3;
+	
+
+}
+
+
+ul img,.dashboard-header img
+{
+	filter: invert(1);
+
+
+}
+ul
+{
+	list-style: none;
+}
+*
+{
+	padding:0;
+	margin:0;
+}
+.dashboard-header
+{
+	display:grid;
+	font-size: 1.5rem;
+	grid-template-columns:1fr 8fr ;
+	align-items: center;
+	color:white;
+	margin-left:1rem;
+	gap:5px;
+	font-weight: bold;
+}
+.dashboard-header img
+{
+	justify-self: center;
+}
+
+
+.sidebar-list-item img
+{
+	width: 1.3rem;
+}
+.sidebar-container
+{
+	display:grid;
+	grid-template-rows: 1fr 4fr 5fr ;
+
+}
+.sidebar-list-item
+{
+	display:grid;
+	grid-template-columns:min-content 8fr ;
+	align-items: center;
+	color:white;
+	font-weight: bold;
+	gap:10px;
+	margin-left:1rem;
+}
+.sidebar-list-item img
+{
+	justify-self: center;
+}
+.nav-setting,.nav-personal
+{
+	display:grid;
+	gap:10px;
+}
+.sidebar-nav-personal
+{
+	margin-top:1.5rem;
+}
+.search-bar-icons-container
+{
+	display:grid;
+	grid-template-columns: min-content 1fr 1fr min-content min-content min-content;
+	place-items: center;
+	gap: 2rem;
+	padding-top:1rem;
+	padding-left:3rem;
+	padding-right:3rem;
+}
+.profile-icon 
+{
+	width:3rem;
+	height:auto;
+}
+.notifications-icon
+{
+	grid-column-start: 4;
+	width: 1.5rem;
+}
+.profile-icon
+{
+	grid-column-start: 5;
+	background-color:#facc15;
+	border-radius: 200px;
+	
+}
+.search-bar-icon	
+{
+	width:2rem;
+}
+.search-bar{
+	width:100%;
+	height:1.8rem;
+	border-radius: 100px;
+	border:none;
+	background-color:#e2e8f0;
+}
+.profile-info-container
+{
+	display:grid;
+	grid-template-rows: max-content max-content;
+	gap:0.5rem;
+	padding-bottom: 1rem ;
+	box-shadow: 20px   black;
+}
+.profile-name-text
+{
+	font-weight: bold;
+	font-size: large;
+}
+.greetings-post-buttons-container .profile-icon
+{
+	width:3.8rem;
+
+	height:3.5rem;
+}
+.greetings-post-buttons-container 
+
+{
+	display:grid;
+	grid-template-columns: min-content max-content 1fr max-content max-content max-content;
+	gap:2rem;
+	place-items: center;
+	padding-top:1rem;
+	padding-left: 2rem;
+	padding-right:3rem;
+}
+.greetings-post-buttons-container .profile-icon
+{
+	grid-column: 1 / 2;
+	
+}
+.greetings-container 
+{
+	grid-column:2/3;
+}
+.new-button
+{
+	grid-column: 4/5;
+}
+.upload-button
+{
+	grid-column:5 / 6;
+}
+.share-button
+{
+	grid-column-start: 6/7 ;
+}
+button
+{
+	width: 7rem;
+	height:2.2rem;
+	border:none;
+	background-color:#1992d4;
+	border-radius: 2rem;
+	color:white;
+	font-weight: bold;
+}
+
+.greetings-container
+{
+	display:grid;
+	grid-template-rows: 1fr 1fr;
+	
+}
+.greeting
+{
+	font-weight: bold;
+}
+.profile-name
+{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.content-container
+{
+	background-color: #e2e8f0;
+}
+.content-container
+{
+	display:grid;
+	grid-template-columns: 75% 25%;
+
+}
+.card-icon
+{
+	width: 1.3rem;
+}
+.projects-container
+{
+	display:grid;
+	grid-template-rows: min-content 1fr;
+
+
+}
+.project-cards-container
+{
+	display:grid;
+	grid-template-columns:1fr 1fr ;
+	grid-auto-rows: 1fr;
+	gap:2rem;
+	padding:1rem;
+
+}
+.card
+{
+	background-color: white;
+	display:grid;
+	grid-template-rows: min-content auto min-content;
+	padding:1.5rem;
+	border-radius: 5px;
+	border-left: 0.4rem solid #f0b429;
+}
+.card-options-container
+{
+	display:grid;
+	grid-auto-flow: column;
+	justify-items: right;
+	justify-content: right;
+	gap:1rem;
+
+}
+.section-heading
+{
+	padding-top:1rem;
+	padding-left: 2rem;
+}
+.trending-item-icon
+{
+	width:3rem;
+	height: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
